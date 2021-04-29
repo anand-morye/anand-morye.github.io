@@ -36,8 +36,10 @@
 </head>
 <body>
   
-  <div class="loader_bg" style="text-align: center; margin-top: 35vh;">
-    <object data="assets/img/Infinity-1s-200px.svg" ></object>
+  <div class="cssload-loader" style="visibility: visible;text-align: center;margin-top: 41vh;margin-left: 3vw;">
+    <div class="cssload-inner cssload-one"></div>
+    <div class="cssload-inner cssload-two"></div>
+    <div class="cssload-inner cssload-three"></div>
   </div>
 
   <!-- ======= Mobile nav toggle button ======= -->
@@ -653,25 +655,25 @@
   </main><!-- End #main -->
 
   
-  
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
   <script>
     
     document.onreadystatechange = function() {
-	if (document.readyState !== "complete") {
-		document.querySelector("body").style.visibility = "hidden";
-		document.querySelector(".loader_bg").style.visibility = "visible";
-	} else {
-		document.querySelector(".loader_bg").style.display = "none";
-		document.querySelector("body").style.visibility = "visible";
-	}
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector(".cssload-loader").style.visibility = "visible";
+  } else {
+    document.querySelector(".cssload-loader").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+  }
 };
 
 
   </script>
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
